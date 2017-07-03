@@ -95,7 +95,7 @@ p{
 i{
 	font-style: normal;
 }
-#header,#nav,#carousel-example-generic,#select,#yuyue,#special,#news,#partner,#footer{
+#header,#nav,.swiper-container,#select,#yuyue,#special,#news,#partner,#footer{
 	min-width:480px;
 }
 /******** 自定义按钮*********/
@@ -522,29 +522,41 @@ fieldset[disabled] .navbar-new .btn-link:focus {
 }
 
 /********carousel轮播图********/
-@media only screen and (min-width: 768px){
-	#carousel-example-generic .carousel-inner .item{
+@media only screen and (min-width: 992px){
+	.swiper-container .swiper-wrapper .swiper-slide{
 	height:410px;
 	background-position:center center ;
 	background-size:cover;
     }
-    #carousel-example-generic .carousel-inner .item:nth-of-type(1){
-	background-image:url(../img/slide_01_2000x410.jpg);
-    }
-    #carousel-example-generic .carousel-inner .item:nth-of-type(2){
-	background-image:url(../img/slide_02_2000x410.jpg);
-    }
-    #carousel-example-generic .carousel-inner .item:nth-of-type(3){
-	background-image:url(../img/slide_03_2000x410.jpg);
-    }
-    #carousel-example-generic .carousel-inner .item:nth-of-type(4){
+    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1){
 	background-image:url(../img/slide_04_2000x410.jpg);
     }
-    #carousel-example-generic .carousel-inner .item>img{
+    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2){
+	background-image:url(../img/slide_01_2000x410.jpg);
+    }
+    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3){
+	background-image:url(../img/slide_02_2000x410.jpg);
+    }
+    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4){
+	background-image:url(../img/slide_03_2000x410.jpg);
+    }
+    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5){
+	background-image:url(../img/slide_04_2000x410.jpg);
+    }
+    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(6){
+	background-image:url(../img/slide_01_2000x410.jpg);
+    }
+    .swiper-container .swiper-wrapper .swiper-slide>img{
 	display:none;
     }
 }
-#carousel-example-generic .carousel-inner .item>img{
+.swiper-container .swiper-wrapper{
+	width:100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+	display:flex;
+}
+.swiper-container .swiper-wrapper .swiper-slide>img{
 	width:100%;
 }
 
