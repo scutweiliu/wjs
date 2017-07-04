@@ -22,7 +22,8 @@ $(function(){
         loop: true
    });
    scrollchange();
-   $(window).on('scroll',scrollchange);
+   $(window).on('resize',scrollchange);
+   
     function scrollchange(){
 	    	if($(window).width()<992){
 	    	//latiao
@@ -30,7 +31,7 @@ $(function(){
 			slidesPerView : 3,
 			slidesPerGroup :2
 		})
-	    	$('#special .swiper-container .swiper-slide').css({'width':'13%','text-align':'center'});
+	    	$('#special>.well>.swiper-container>.swiper-wrapper>.swiper-slide').css({'width':'13%','text-align':'center'});
 	    	$('#special .swiper-container .swiper-wrapper').css({'width':'200%','display':'inline-block','padding-top':'10px'});
 	    	$('#special .swiper-container .swiper-slide>a').css({'padding-bottom':'10px'});
 	    }
