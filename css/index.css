@@ -260,35 +260,48 @@ fieldset[disabled] .navbar-new .btn-link:focus {
 .nav-tabs-my {
   border-bottom: 1px solid #ddd;
 }
-.nav-tabs-my > li {
+.nav-tabs-my   li {
   float: left;
   margin-bottom: -1px;
 }
-.nav-tabs-my > li > a {
+.nav-tabs-my   li > a {
   line-height: 1.42857143;
   color:gray;
   font-size:16px;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
-.nav-tabs-my > li > a:hover {
+.nav-tabs-my   li > a:hover {
   border-bottom:3px solid red;
   color:black;
   background:transparent;
 }
-.nav-tabs-my > li.active > a,
-.nav-tabs-my > li.active > a:hover,
-.nav-tabs-my > li.active > a:focus {
+.nav-tabs-my   li.active > a,
+.nav-tabs-my   li.active > a:hover,
+.nav-tabs-my   li.active > a:focus {
   color:black;
   cursor: default;
   background:transparent;
   border-bottom:3px solid red;
 }
-.nav-tabs-my > li.missed>a{
+.nav-tabs-my   li.missed>a{
 	color:gray;
 	background:transparent;
 	border-bottom:0;
 }
+#special .tab-content{
+	padding-top:10px;
+}
+@media only screen and (max-width: 992px) {
+	#special>.well>.container>.swiper-container>.swiper-wrapper{
+	}
+	#special>.well>.container>.swiper-container>.swiper-wrapper .swiper-slide{
+	}
+	#special>.well>.container>.swiper-container>.swiper-wrapper .swiper-slide>a{
+	
+	}
+}
+
 /******** 自定义--面板  *********/
 .panel-myfault {
   border-color: #ddd;
@@ -523,43 +536,50 @@ fieldset[disabled] .navbar-new .btn-link:focus {
 
 /********carousel轮播图********/
 @media only screen and (min-width: 992px){
-	.swiper-container .swiper-wrapper .swiper-slide{
+	#carou .swiper-container .swiper-wrapper .swiper-slide{
 	height:410px;
 	background-position:center center ;
 	background-size:cover;
     }
-    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1){
+    #carou .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1){
 	background-image:url(../img/slide_04_2000x410.jpg);
     }
-    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2){
+    #carou .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2){
 	background-image:url(../img/slide_01_2000x410.jpg);
     }
-    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3){
+    #carou .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3){
 	background-image:url(../img/slide_02_2000x410.jpg);
     }
-    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4){
+    #carou .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4){
 	background-image:url(../img/slide_03_2000x410.jpg);
     }
-    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5){
+    #carou .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5){
 	background-image:url(../img/slide_04_2000x410.jpg);
     }
-    .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(6){
+    #carou .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(6){
 	background-image:url(../img/slide_01_2000x410.jpg);
     }
-    .swiper-container .swiper-wrapper .swiper-slide>img{
+    #carou .swiper-container .swiper-wrapper .swiper-slide>img{
 	display:none;
     }
 }
-.swiper-container .swiper-wrapper{
+#carou .swiper-container .swiper-wrapper{
 	width:100%;
 }
-.swiper-container .swiper-wrapper .swiper-slide{
+#carou .swiper-container .swiper-wrapper .swiper-slide{
 	display:flex;
 }
-.swiper-container .swiper-wrapper .swiper-slide>img{
+#carou .swiper-container .swiper-wrapper .swiper-slide>img{
 	width:100%;
 }
-
+#carou .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+	transform: scale(2,2);
+	margin:0 10px;
+	border:1px solid white;
+}
+#carou .swiper-container .swiper-pagination-bullet-active{
+	background:white;
+}
 /*************六种选择**************/
 #select{
 	padding:50px 0;

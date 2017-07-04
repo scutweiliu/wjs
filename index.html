@@ -103,30 +103,31 @@
 		
 			
 		<!--轮播图-->
-		<div class="swiper-container">
-			
-
-			<!-- Wrapper for slides -->
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img src="img/slide_01_640x340.jpg" alt="...">
+		<div id="carou">
+			<div class="swiper-container">
+				<!-- Wrapper for slides -->
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/slide_01_640x340.jpg" alt="...">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/slide_02_640x340.jpg" alt="...">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/slide_03_640x340.jpg" alt="...">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/slide_04_640x340.jpg" alt="...">
+					</div>
 				</div>
-				<div class="swiper-slide">
-					<img src="img/slide_02_640x340.jpg" alt="...">
-				</div>
-				<div class="swiper-slide">
-					<img src="img/slide_03_640x340.jpg" alt="...">
-				</div>
-				<div class="swiper-slide">
-					<img src="img/slide_04_640x340.jpg" alt="...">
-				</div>
+	            <!-- Indicators -->
+				<div class="swiper-pagination"></div>
+				<!-- Controls -->
+				<div class="swiper-button-next swiper-button-white"></div>
+	            <div class="swiper-button-prev swiper-button-white"></div>
 			</div>
-            <!-- Indicators -->
-			<div class="swiper-pagination"></div>
-			<!-- Controls -->
-			<div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
 		</div>
+		
 		
 			
 		<!--六种选择-->
@@ -231,9 +232,9 @@
 		<!--特别推荐-->
 		<div id="special">
 			<div class="well">
-				<div class="container">
+				<div class="container swiper-container swiper-container-horizontal">
 					  <!-- Nav tabs -->
-					  <ul class="nav nav-tabs-my" role="tablist">
+					  <ul class="nav nav-tabs-my hidden-xs hidden-sm" role="tablist">
 					    <li role="presentation" class="active"><a href="#tuijian-1" role="tab" data-toggle="tab">特别推荐</a></li>
 					    <li role="presentation"><a href="#tuijian-2" role="tab" data-toggle="tab">微投资</a></li>
 					    <li role="presentation"><a href="#tuijian-3" role="tab" data-toggle="tab">微小宝</a></li>
@@ -242,6 +243,15 @@
 					    <li role="presentation"><a href="#tuijian-6" role="tab" data-toggle="tab">微金宝</a></li>
 					    <li role="presentation"><a href="#tuijian-7" role="tab" data-toggle="tab">微转让</a></li>
 					    <li class="navbar-right missed hidden-xs hidden-sm"><a href="#tuijian-8">更多</a></li>
+					  </ul>
+					  <ul class="nav nav-tabs-my swiper-wrapper hidden-lg hidden-md" role="tablist">
+					    <li role="presentation" class="active swiper-slide swiper-slide-active"><a href="#tuijian-1" role="tab" data-toggle="tab">特别推荐</a></li>
+					    <li class="swiper-slide swiper-slide-next" role="presentation"><a href="#tuijian-2" role="tab" data-toggle="tab">微投资</a></li>
+					    <li class="swiper-slide" role="presentation"><a href="#tuijian-3" role="tab" data-toggle="tab">微小宝</a></li>
+					    <li class="swiper-slide" role="presentation"><a href="#tuijian-4" role="tab" data-toggle="tab">微消费</a></li>
+					    <li class="swiper-slide" role="presentation"><a href="#tuijian-5" role="tab" data-toggle="tab">微增利</a></li>
+					    <li class="swiper-slide" role="presentation"><a href="#tuijian-6" role="tab" data-toggle="tab">微金宝</a></li>
+					    <li class="swiper-slide" role="presentation"><a href="#tuijian-7" role="tab" data-toggle="tab">微转让</a></li>
 					  </ul>
 					
 					  <!-- Tab panes -->
